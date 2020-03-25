@@ -1,26 +1,66 @@
 <template>
-  <svg class="NuxtLogo" width="245" height="180" viewBox="0 0 452 342" xmlns="http://www.w3.org/2000/svg">
-    <g fill="none" fill-rule="evenodd">
-      <path
-        d="M139 330l-1-2c-2-4-2-8-1-13H29L189 31l67 121 22-16-67-121c-1-2-9-14-22-14-6 0-15 2-22 15L5 303c-1 3-8 16-2 27 4 6 10 12 24 12h136c-14 0-21-6-24-12z"
-        fill="#00C58E"
-      />
-      <path
-        d="M447 304L317 70c-2-2-9-15-22-15-6 0-15 3-22 15l-17 28v54l39-67 129 230h-49a23 23 0 0 1-2 14l-1 1c-6 11-21 12-23 12h76c3 0 17-1 24-12 3-5 5-14-2-26z"
-        fill="#108775"
-      />
-      <path
-        d="M376 330v-1l1-2c1-4 2-8 1-12l-4-12-102-178-15-27h-1l-15 27-102 178-4 12a24 24 0 0 0 2 15c4 6 10 12 24 12h190c3 0 18-1 25-12zM256 152l93 163H163l93-163z"
-        fill="#2F495E"
-        fill-rule="nonzero"
-      />
-    </g>
-  </svg>
+  <div class="NuxtLogo">
+    <svg
+      style="height: 100%;"
+      id="Layer_1"
+      data-name="Layer 1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1000 1000"
+    >
+      <defs>
+        <style>
+  .cls-1,
+  .cls-2,
+  .cls-3,
+  .cls-4 {
+    fill: none;
+    stroke-miterlimit: 10;
+    stroke-width: 80px;
+  }
+  .cls-1 {
+    stroke: #1ce9b6;
+  }
+  .cls-2 {
+    stroke: #00bfa5;
+  }
+  .cls-2,
+  .cls-3,
+  .cls-4 {
+    stroke-linecap: round;
+  }
+  .cls-3,
+  .cls-4 {
+    stroke: #4285f4;
+  }
+  .cls-3 {
+    opacity: 0.85;
+  }
+  .cls-5 {
+    fill: #4285f4;
+  }
+        </style>
+      </defs>
+      <title>Artboard 3</title>
+      <line class="cls-1" x1="138.45" y1="563.93" x2="272.36" y2="908.28" />
+      <line class="cls-2" x1="138.45" y1="563.93" x2="189.98" y2="699.6" />
+      <line class="cls-2" x1="504.04" y1="289.14" x2="272.36" y2="908.28" />
+      <line class="cls-3" x1="504.04" y1="289.14" x2="683.8" y2="740.52" />
+      <line class="cls-4" x1="683.8" y1="739.52" x2="923.47" y2="104.4" />
+      <circle class="cls-5" cx="610.48" cy="885.73" r="73.31" />
+    </svg>
+    <h1 style="color: rgb(0, 191, 165); font-weight: 400;">
+      International Women's Day
+      <span style="color: rgb(66, 133, 244);">2020</span>
+    </h1>
+  </div>
 </template>
 <style>
 .NuxtLogo {
   animation: 1s appear;
   margin: auto;
+  display: flex;
+  height: 8vh;
+  align-items: center;
 }
 
 @keyframes appear {
@@ -29,6 +69,14 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .NuxtLogo {
+    height: 15vh;
+  }
+  h1 {
+    font-size: 1.5rem;
   }
 }
 </style>

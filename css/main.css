@@ -1,4 +1,40 @@
 :root {
   --bag-color: #04091e;
+  --bag-light: #1a1f32;
   --vs-primary: 0, 191, 165;
+  color: white;
+}
+
+.vs-alert--gradient::before {
+  background: linear-gradient(
+    to right bottom,
+    rgb(0, 167, 255),
+    rgb(66, 133, 244)
+  );
+}
+.vs-input {
+  height: 50px;
+  width: 25vw;
+}
+.vs-input__icon {
+  height: 50px;
+  width: 50px;
+}
+.vs-input--has-icon {
+  padding-left: 60px;
+}
+
+.vs-input:focus.vs-input--has-icon:not(.vs-input--has-icon--after) {
+  padding-left: 55px;
+}
+@media only screen and (max-width: 1200px) {
+  .vs-input {
+    height: 50px;
+    width: 40vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .vs-input {
+    width: 100%;
+  }
 }
