@@ -6,7 +6,7 @@
     </div>
     <div class="thankYouCard">
       <img src="~/assets/wtm.svg" alt="wtm" style="height:8vh" />
-      <div style="display:flex;height:15vh">
+      <div class="logos">
         <logo />
         <iwd-idea class="ideathon" />
       </div>
@@ -147,9 +147,6 @@ export default {
 </script>
 
 <style>
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -205,6 +202,10 @@ export default {
 .alert {
   height: fit-content !important;
 }
+.logos {
+  display: flex;
+  height: 15vh;
+}
 @media only screen and (max-width: 1300) {
   .container {
     grid-template-columns: 1fr;
@@ -241,6 +242,15 @@ export default {
   .thanks {
     font-size: 1.25rem;
     font-weight: 200;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .logos {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .ideathon {
+    height: 10vh;
   }
 }
 </style>
